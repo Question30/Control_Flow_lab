@@ -46,3 +46,16 @@ console.log("The new Area is " + newArea);
 const neededSpace = newArea - area;
 const newRadius = Math.sqrt(newArea / PI);
 console.log("The new Radius is " + newRadius);
+
+const newPercent = (newArea / area) * 100;
+console.log(newPercent);
+
+try {
+  if (newArea > area) {
+    throw "Area is too small";
+  } else {
+    PlantStatus(newPercent);
+  }
+} catch (error) {
+  console.log(error);
+}
