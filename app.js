@@ -32,3 +32,17 @@ function PlantStatus(percentage) {
 PlantStatus(week1Percentage);
 PlantStatus(week2Percentage);
 PlantStatus(week3Percentage);
+
+//Part Two
+
+const newStartAmount = 100;
+const afterTenWeeks = newStartAmount * 2 ** 10;
+
+//Total space after
+const newArea = afterTenWeeks * 0.8;
+console.log("The new Area is " + newArea);
+
+//How much more space do we need
+const neededSpace = newArea - area;
+const newRadius = Math.sqrt(newArea / PI);
+console.log("The new Radius is " + newRadius);
