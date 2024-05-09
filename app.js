@@ -36,7 +36,8 @@ PlantStatus(week3Percentage);
 //Part Two
 
 const newStartAmount = 100;
-const afterTenWeeks = newStartAmount * 2 ** 10;
+const afterTenWeeks = newStartAmount * 2 ** 9;
+console.log(afterTenWeeks);
 
 //Total space after
 const newArea = afterTenWeeks * 0.8;
